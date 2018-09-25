@@ -5,12 +5,12 @@ Inventory created at: Tue Sep 25 17:23:33 CEST 2018
 ## Brews
 
 - [x] adr_tools: A command-line tool for working with Architecture Decision Records (ADRs).
-- [x] antlr: ANother Tool for Language Recognition
+- [ ] antlr: ANother Tool for Language Recognition
 - [x] awscli: Official Amazon AWS command-line interface
 - [x] bat: Clone of cat(1) with syntax highlighting and Git integration
-- [x] browsh: The modern, text-based browser
-- [x] buck: The Buck build system
-- [x] composer: Dependency Manager for PHP
+- [ ] browsh: The modern, text-based browser
+- [ ] buck: The Buck build system
+- [ ] composer: Dependency Manager for PHP
 - [x] coreutils: GNU File, Shell, and Text utilities
 - [ ] csvkit: Suite of command-line tools for converting to and working with CSV
 - [x] delve: Debugger for the Go programming language.
@@ -75,42 +75,43 @@ Inventory created at: Tue Sep 25 17:23:33 CEST 2018
 ## Casks
 
 - [x] adapter: https://macroplant.com/adapter
-- [x] android-platform-tools: https://developer.android.com/studio/releases/platform-tools.html
-- [x] anki: https://apps.ankiweb.net/
+- [ ] android-platform-tools: https://developer.android.com/studio/releases/platform-tools.html
+- [ ] anki: https://apps.ankiweb.net/
 - [x] apache-directory-studio: https://directory.apache.org/studio/
 - [x] arduino: https://www.arduino.cc/
-- [x] bitbar: https://github.com/matryer/bitbar/
+- [ ] bitbar: https://github.com/matryer/bitbar/
 - [x] blender: https://www.blender.org/
 - [x] caffeine: http://lightheadsw.com/caffeine/
 - [x] cakebrew: https://www.cakebrew.com/
-- [x] calibre: https://calibre-ebook.com/
-- [x] chicken: https://sourceforge.net/projects/chicken/
-- [x] elm-platform: http://www.elm-lang.org/
+- [ ] calibre: https://calibre-ebook.com/
+- [ ] chicken: https://sourceforge.net/projects/chicken/
+- [ ] elm-platform: http://www.elm-lang.org/
 - [x] freecad: https://www.freecadweb.org/
-- [x] github-desktop: https://desktop.github.com/
-- [x] gitkraken: https://www.gitkraken.com/
+- [ ] github-desktop: https://desktop.github.com/
+- [ ] gitkraken: https://www.gitkraken.com/
 - [x] hex-fiend: (failed to read homepage information)
 - [x] insomnia: https://insomnia.rest/
-- [x] iterm2-beta: https://www.iterm2.com/
-- [x] keycast: https://github.com/cho45/KeyCast
-- [x] keycastr: https://github.com/keycastr/keycastr
+- [x] iterm2: https://www.iterm2.com/
+- [x] java: https://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html
+- [ ] keycast: https://github.com/cho45/KeyCast
+- [ ] keycastr: https://github.com/keycastr/keycastr
 - [x] launchrocket: https://github.com/jimbojsb/launchrocket
 - [x] librecad: https://librecad.org/
 - [x] ngrok: https://ngrok.com/
 - [x] openscad: http://www.openscad.org/
 - [x] osxfuse: (failed to read homepage information)
-- [x] pgadmin4: https://www.pgadmin.org/
+- [ ] pgadmin4: https://www.pgadmin.org/
 - [x] pibakery: http://www.pibakery.org/
 - [x] quicksilver: https://qsapp.com/
-- [x] rdm: http://redisdesktop.com
+- [ ] rdm: http://redisdesktop.com
 - [x] rstudio: https://www.rstudio.com/
-- [x] slic3r: (failed to read homepage information)
-- [x] solvespace: http://solvespace.com/index.pl/
-- [x] sourcetree: https://www.sourcetreeapp.com/
+- [ ] slic3r: (failed to read homepage information)
+- [ ] solvespace: http://solvespace.com/index.pl/
+- [ ] sourcetree: https://www.sourcetreeapp.com/
 - [x] vlc: (failed to read homepage information)
-- [x] xquartz: https://www.xquartz.org/
-- [x] yubikey-neo-manager: https://developers.yubico.com/yubikey-neo-manager/
-- [x] yubikey-personalization-gui: https://www.yubico.com/products/services-software/personalization-tools/use/
+- [ ] xquartz: https://www.xquartz.org/
+- [ ] yubikey-neo-manager: https://developers.yubico.com/yubikey-neo-manager/
+- [ ] yubikey-personalization-gui: https://www.yubico.com/products/services-software/personalization-tools/use/
 
 ## Installed taps
 

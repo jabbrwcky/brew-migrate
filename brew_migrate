@@ -68,13 +68,16 @@ done
 # Installing brews
 #
 echo "Installing brews"
-brew install $(join_by " ", ${brews[@]})
+for b in ${brews[@]}; do
+    brew install \${b}
+done
 
 #
 # Installing casks
 echo "Installing casks"
-brew cask install $(join_by " ", ${casks[@]})
+for c in ${casks[@]}; do
+    brew cask install \${c}
+done
 
 echo "Done"
-
-EOF 
+EOF
