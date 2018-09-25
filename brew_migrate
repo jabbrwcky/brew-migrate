@@ -1,0 +1,80 @@
+#!/usr/bin/env bash
+
+function join_by { local IFS="$1"; shift; echo "$*"; }
+
+if  [ $# -ne 1 ]; then
+    echo "Please pass inventory file as argument"
+    exit -1
+fi
+
+filename=$1
+declare -a brews
+declare -a casks
+declare -a taps
+
+while read -r line
+do
+    case $line in
+    "## Casks")
+        targets="casks";;
+    "## Brews")
+        targets="brews";;
+    "## Installed taps")
+        targets="taps";;
+    "");;
+    *)
+        name=$(echo "$line" | awk '/- \[x\].+/ { gsub(/- \[x\] /,"");split($0, l, ":");print l[1] }')
+
+        case $targets in
+        "casks")
+            casks+=($name)
+            ;;
+        "brews")
+            brews+=($name)
+            ;;
+        "taps")
+            case $name in
+            "homebrew/binary" | "homebrew/devel-only" | "homebrew/games" | "homebrew/science"  | "homebrew/versions"  | "homebrew/x11")
+                echo "Ignoring deprecated tap $name";;
+            *)
+                taps+=($name);;
+            esac
+            ;;
+        esac
+    ;;
+    esac
+done < "$filename"
+
+cat << EOF
+#!/usr/bin/env bash
+
+# Brew installation restore
+# Generated at $(date)
+#
+
+which -s brew
+if [ \$? -ne 0 ]; then
+    echo "Installing brew..."
+    (/usr/bin/ruby -e "\$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)")
+fi
+
+# Retapping taps
+#
+echo "Tapping taps"
+for t in ${taps[@]}; do
+    brew tap \${t}
+done
+
+# Installing brews
+#
+echo "Installing brews"
+brew install $(join_by " ", ${brews[@]})
+
+#
+# Installing casks
+echo "Installing casks"
+brew cask install $(join_by " ", ${casks[@]})
+
+echo "Done"
+
+EOF 

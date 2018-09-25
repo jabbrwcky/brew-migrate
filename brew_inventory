@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+if [ $# -eq 1 ]; then
+    file=$1
+else
+    file=brew_inventory.md
+fi
+
+which -s jq
+
+if [ $? -ne 0 ]; then
+    echo "Installing jq..."
+    (brew install jq)
+fi
+
+cat << EOF >$file  
+# Brew Inventory
+
+Inventory created at: $(date)
+
+## Brews
+
+EOF
+
+echo "Getting brews..."
+brew info --json=v1 $(brew list -1) | jq -r '.[] | select(.installed[0].installed_as_dependency == false) | "- [x] " + .name + ": " + .desc?'  >> $file
+
+cat << EOF >>$file 
+
+## Casks
+
+EOF
+
+echo "Collecting casks..."
+for c in $(brew cask list -1); do
+    echo -n "- [x] $c: " >> $file
+    info=$(brew cask info --json=v1 $c 2>/dev/null)
+    if [ $? -ne 0 ]; then
+        echo "(failed to read homepage information)" >>$file
+    else
+        echo $info | jq -r '.[].homepage' 2>/dev/null >>$file
+    fi
+done
+
+cat << EOF >>$file 
+
+## Installed taps
+
+EOF
+
+echo "Enumerating taps..."
+brew tap 2&>1 >/dev/null
+for t in $(brew tap 2>/dev/null); do
+    case $t in
+    "homebrew/binary" | "homebrew/devel-only" |  "homebrew/games" | "homebrew/science" |  "homebrew/versions" | "homebrew/x11")
+        echo "Ignoring deprecated tap $t";;
+    *)
+        echo "- [x] $t" >> $file
+    esac
+done
+echo "Done!"

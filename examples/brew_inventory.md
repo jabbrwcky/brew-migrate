@@ -1,0 +1,129 @@
+# Brew Inventory
+
+Inventory created at: Tue Sep 25 17:23:33 CEST 2018
+
+## Brews
+
+- [x] adr_tools: A command-line tool for working with Architecture Decision Records (ADRs).
+- [x] antlr: ANother Tool for Language Recognition
+- [x] awscli: Official Amazon AWS command-line interface
+- [x] bat: Clone of cat(1) with syntax highlighting and Git integration
+- [x] browsh: The modern, text-based browser
+- [x] buck: The Buck build system
+- [x] composer: Dependency Manager for PHP
+- [x] coreutils: GNU File, Shell, and Text utilities
+- [ ] csvkit: Suite of command-line tools for converting to and working with CSV
+- [x] delve: Debugger for the Go programming language.
+- [x] dep: Go dependency management tool
+- [x] direnv: Load/unload environment variables based on $PWD
+- [ ] dmidecode: Dmidecode reports information about your system's hardware.
+- [x] elixir: Functional metaprogramming aware language built on Erlang VM
+- [x] entr: Run arbitrary commands when files change
+- [x] exercism: Command-line tool to interact with exercism.io
+- [x] exiv2: EXIF and IPTC metadata manipulation library and tools
+- [x] ext4fuse: Read-only implementation of ext4 for FUSE
+- [x] fd: Simple, fast and user-friendly alternative to find
+- [ ] fftw: C routines to compute the Discrete Fourier Transform
+- [x] fish: User-friendly command-line shell for UNIX-like operating systems
+- [x] fortune: Infamous electronic fortune-cookie generator
+- [x] fzf: Command-line fuzzy finder written in Go
+- [x] giflib: Library and utilities for processing GIFs
+- [x] git-lfs: Git extension for versioning large files
+- [ ] goreleaser: Deliver Go binaries as fast and easily as possible
+- [ ] gsl: Numerical library for C and C++
+- [x] heroku: Command-line client for the cloud PaaS
+- [x] idris: Pure functional programming language with dependent types
+- [x] irssi: Modular IRC client
+- [x] jsonlint: JSON parser and validator with a CLI
+- [x] kompose: Tool to move from `docker-compose` to Kubernetes
+- [x] kubectx: Tool that can switch between kubectl contexts easily and create aliases
+- [ ] libmagic: Implementation of the file(1) command
+- [x] lua@5.1: Powerful, lightweight programming language (v5.1.5)
+- [x] mesalib-glw: Open-source implementation of the OpenGL specification
+- [x] mkcert: Simple tool to make locally trusted development certificates
+- [x] mosh: Remote terminal application
+- [x] mysql: Open source relational database management system
+- [x] ncdu: NCurses Disk Usage
+- [ ] neovim: Ambitious Vim-fork focused on extensibility and agility
+- [x] netcat: Utility for managing network connections
+- [x] nss: Libraries for security-enabled client and server applications
+- [ ] octave: High-level interpreted language for numerical computing
+- [x] openssl@1.1: Cryptography and SSL/TLS Toolkit
+- [x] p7zip: 7-Zip (high compression file archiver) implementation
+- [x] pandoc: Swiss-army knife of markup format conversion
+- [x] peco: Simplistic interactive filtering tool
+- [x] phantomjs: Headless WebKit scriptable with a JavaScript API
+- [x] php@7.1: General-purpose scripting language
+- [x] plantuml: Draw UML diagrams
+- [x] ponysay: Cowsay but with ponies
+- [x] postgresql: Object-relational database system
+- [x] prettyping: Wrapper to colorize and simplify ping's output
+- [x] pwgen: Password generator
+- [x] radare2: Reverse engineering framework
+- [x] sdl: Low-level access to audio, keyboard, mouse, joystick and graphics
+- [x] sshfs: File system client based on SSH File Transfer Protocol
+- [x] swig: Generate scripting interfaces to C/C++ code
+- [x] thefuck: Programatically correct mistyped console commands
+- [x] tldr: Simplified and community-driven man pages
+- [x] toxiproxy: 
+- [x] unar: Command-line unarchiving tools supporting multiple formats
+- [x] vault: Secures, stores, and tightly controls access to secrets
+- [x] vegeta: HTTP load testing tool and library
+- [x] watchman: Watch files and take action when they change
+- [x] webp: Image format providing lossless and lossy compression for web images
+
+## Casks
+
+- [x] adapter: https://macroplant.com/adapter
+- [x] android-platform-tools: https://developer.android.com/studio/releases/platform-tools.html
+- [x] anki: https://apps.ankiweb.net/
+- [x] apache-directory-studio: https://directory.apache.org/studio/
+- [x] arduino: https://www.arduino.cc/
+- [x] bitbar: https://github.com/matryer/bitbar/
+- [x] blender: https://www.blender.org/
+- [x] caffeine: http://lightheadsw.com/caffeine/
+- [x] cakebrew: https://www.cakebrew.com/
+- [x] calibre: https://calibre-ebook.com/
+- [x] chicken: https://sourceforge.net/projects/chicken/
+- [x] elm-platform: http://www.elm-lang.org/
+- [x] freecad: https://www.freecadweb.org/
+- [x] github-desktop: https://desktop.github.com/
+- [x] gitkraken: https://www.gitkraken.com/
+- [x] hex-fiend: (failed to read homepage information)
+- [x] insomnia: https://insomnia.rest/
+- [x] iterm2-beta: https://www.iterm2.com/
+- [x] keycast: https://github.com/cho45/KeyCast
+- [x] keycastr: https://github.com/keycastr/keycastr
+- [x] launchrocket: https://github.com/jimbojsb/launchrocket
+- [x] librecad: https://librecad.org/
+- [x] ngrok: https://ngrok.com/
+- [x] openscad: http://www.openscad.org/
+- [x] osxfuse: (failed to read homepage information)
+- [x] pgadmin4: https://www.pgadmin.org/
+- [x] pibakery: http://www.pibakery.org/
+- [x] quicksilver: https://qsapp.com/
+- [x] rdm: http://redisdesktop.com
+- [x] rstudio: https://www.rstudio.com/
+- [x] slic3r: (failed to read homepage information)
+- [x] solvespace: http://solvespace.com/index.pl/
+- [x] sourcetree: https://www.sourcetreeapp.com/
+- [x] vlc: (failed to read homepage information)
+- [x] xquartz: https://www.xquartz.org/
+- [x] yubikey-neo-manager: https://developers.yubico.com/yubikey-neo-manager/
+- [x] yubikey-personalization-gui: https://www.yubico.com/products/services-software/personalization-tools/use/
+
+## Installed taps
+
+- [x] browsh-org/browsh
+- [x] cavaliercoder/dmidecode
+- [x] facebook/fb
+- [x] go-delve/delve
+- [x] goreleaser/tap
+- [x] homebrew/cask
+- [x] homebrew/cask-drivers
+- [x] homebrew/cask-versions
+- [x] homebrew/core
+- [x] homebrew/services
+- [x] neovim/neovim
+- [x] olleolleolle/adr-tools
+- [x] shopify/shopify
