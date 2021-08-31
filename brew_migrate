@@ -76,7 +76,7 @@ done
 # Installing casks
 echo "Installing casks"
 for c in ${casks[@]}; do
-    brew cask install \${c}
+    brew install --cask \${c}
 done
 
 echo "Done"
