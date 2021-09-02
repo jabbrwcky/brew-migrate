@@ -12,7 +12,7 @@ if [ $? -ne 0 ]; then
     (brew install jq)
 fi
 
-cat << EOF >$file  
+cat << EOF >$file
 # Brew Inventory
 
 Inventory created at: $(date)
@@ -22,16 +22,16 @@ Inventory created at: $(date)
 EOF
 
 echo "Getting brews..."
-brew info --json=v1 $(brew list -1) | jq -r '.[] | select(.installed[0].installed_as_dependency == false) | "- [x] " + .name + ": " + .desc?'  >> $file
+brew info --json=v1 $(brew list --formula -1) | jq -r '.[] | select(.installed[0].installed_as_dependency == false) | "- [x] " + .name + ": " + .desc?'  >> $file
 
-cat << EOF >>$file 
+cat << EOF >>$file
 
 ## Casks
 
 EOF
 
 echo "Collecting casks..."
-for c in $(brew cask list -1); do
+for c in $(brew list --cask -1); do
     echo -n "- [x] $c: " >> $file
     info=$(brew cask info --json=v1 $c 2>/dev/null)
     if [ $? -ne 0 ]; then
@@ -41,7 +41,7 @@ for c in $(brew cask list -1); do
     fi
 done
 
-cat << EOF >>$file 
+cat << EOF >>$file
 
 ## Installed taps
 
